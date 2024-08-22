@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link , useNavigate } from 'react-router-dom';
-import Button from './components/button';
+import Button from './button';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
