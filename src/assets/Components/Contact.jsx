@@ -61,7 +61,7 @@ const Contact = () => {
               placeholder="Enter your message here..."
             ></textarea>
           </div>
-          <Button className={`md:px-44`} type="submit">Contact Me</Button>
+          <Button className={`md:px-44 md:mb-5 `} type="submit">Contact Me</Button>
         </form>
       </section>
     </>
