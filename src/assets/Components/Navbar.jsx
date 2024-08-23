@@ -21,7 +21,7 @@ const Navbar = () => {
       <h1 className="bg-transparent text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-300 to-white text-3xl font-bold">
         Saurabh Shelar
       </h1>
-      <div className="md:hidden flex items-center">
+      <div className="md:hidden flex items-center ">
         <img
           onClick={handleClick}
           className="w-6 h-5 hover:scale-105 duration-200 cursor-pointer"
@@ -30,7 +30,7 @@ const Navbar = () => {
         />
       </div>
       <div className={`absolute top-full left-0 w-full transition-transform duration-300 ease-in-out bg-slate-95 rounded-3xl ${open ? 'transform translate-y-0 opacity-100' : 'transform translate-y-[-20px] opacity-0 pointer-events-none'}`}>
-        <ul className="flex flex-col items-center space-y-2 shadow-lg p-4 rounded-lg">
+        <ul className="flex flex-col items-center space-y-2 shadow-lg p-4 rounded-2xl bg-blue-800">
           <li className="my-1">
             <Link to="/">Home</Link>
           </li>
