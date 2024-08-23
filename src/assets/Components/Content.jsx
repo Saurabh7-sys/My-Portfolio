@@ -39,7 +39,7 @@ const Content = () => {
         <img
           data-aos="zoom-in"
           className='w-20 relative bottom-28 left-14 md:z-40 md:w-28 md:relative md:top-[-450px] md:left-20 md:hover:scale-110 md:duration-200 cursor-pointer z-40'
-          src="public\images\CVBALL.png"
+          src="\images\CVBALL.png"
           alt="CV"
           onClick={handleCvClick}
         />

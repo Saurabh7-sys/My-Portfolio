@@ -25,7 +25,7 @@ const Navbar = () => {
         <img
           onClick={handleClick}
           className="w-6 h-5 hover:scale-105 duration-200 cursor-pointer"
-          src={open ? "public/images/cross.png" : "public/images/menu.png"}
+          src={open ? "/images/cross.png" : "/images/menu.png"}
           alt={open ? "close menu" : "open menu"}
         />
       </div>

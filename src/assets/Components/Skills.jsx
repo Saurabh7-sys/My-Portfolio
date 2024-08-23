@@ -14,7 +14,7 @@ const Skills = () => {
     <section  className="w-full flex justify-around items-center mt-44 p-3 md:mt-48"  data-aos = "zoom-in">
         
         <div className="html flex flex-col items-center gap-4" >
-            <img className="w-16 h-16   md:w-24 md:h-24" src="public\images\html.png" alt="html" />
+            <img className="w-16 h-16   md:w-24 md:h-24" src="\images\html.png" alt="html" />
             <h3 className="md:text-2xl">HTML</h3>
         </div>
         <div className="css flex flex-col items-center gap-4">
