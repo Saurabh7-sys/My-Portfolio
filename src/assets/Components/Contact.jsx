@@ -1,4 +1,4 @@
-import Button from "./button"
+import Button from "./Button"
 import Aos from "aos"
 import 'aos/dist/aos.css'
 import { useEffect } from "react"

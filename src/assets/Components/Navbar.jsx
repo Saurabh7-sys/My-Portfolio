@@ -1,4 +1,4 @@
-import Button from './button';
+import Button from './Button';
 import { useState } from 'react';
 import { Link , useNavigate } from 'react-router-dom';
 
