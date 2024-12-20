@@ -62,9 +62,7 @@ const Navbar = () => {
         <li className="hover:scale-110 duration-200 cursor-pointer">
           <a onClick={() => handleScrollToSection('skills')} href="#skills">Skills</a>
         </li>
-        <li className="hover:scale-110 duration-200 cursor-pointer">
-          <a onClick={() => handleScrollToSection('contact')} href="#contact">Contact</a>
-        </li>
+        
         <Button onClick={() => handleScrollToSection('contact')}>Contact Me</Button>
       </ul>
     </nav>
