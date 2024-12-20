@@ -15,9 +15,10 @@ const Content = () => {
   }, []);
 
   const handleCvClick = () => {
-    alert("Resume is not uploaded yet. Please try again after a few days.");
+    const resumeUrl = "https://drive.google.com/file/d/1gOJrWR0uSBD7qXLwIDL0kUHZ2NEmd3I2/view?usp=sharing";
+    window.open(resumeUrl, "_blank");
   };
-
+  
   return (
     <main className="flex-grow w-full max-w-full md:flex md:items-center md:justify-between md:gap-8 md:max-w-[1500px] md:mx-auto mt-5">
       <div className='px-5 md:min-w-[550px] md:ml-14'>
