@@ -7,7 +7,7 @@ const About = () => {
     },[])
   return (
     <>
-    <section className="md:flex md:flex-col md:justify-center md:items-center md:w-full md:mt-20" data-aos = "zoom-in">
+    <section className="h-screen md:flex md:flex-col md:justify-center md:items-center md:w-full md:mt-20" data-aos = "zoom-in">
         <div className="flex flex-col justify-center items-center     md:flex md:items-center " data-aos = "zoom-in" >
         <h1 className="text-4xl   md:text-5xl  font-bold" >About me</h1>
         <img className="w-28" src="\images\gg_arrow-left.png" alt="arrow" />

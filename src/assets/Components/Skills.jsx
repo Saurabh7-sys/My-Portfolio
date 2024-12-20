@@ -8,7 +8,9 @@ const Skills = () => {
     },[])
   return (
     <>
-    <div className="heading w-full flex justify-around items-center mt-20 text-4xl md:text-5xl " data-aos = "zoom-in">
+    <div className="h-screen flex flex-col gap-10">
+
+    <div className=" w-full flex justify-around items-center mt-20 text-4xl md:text-5xl " data-aos = "zoom-in">
         <h1 className="font-bold">My Skills</h1>
     </div>
     <section  className="w-full flex justify-around items-center mt-44 p-3 md:mt-48"  data-aos = "zoom-in">
@@ -34,6 +36,7 @@ const Skills = () => {
             <h3 className="md:text-2xl">TAILWIND</h3>
         </div>
     </section>
+    </div>
     </>
   )
 }

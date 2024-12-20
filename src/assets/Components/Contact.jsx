@@ -27,7 +27,7 @@ const Contact = () => {
 
   return (
     <>
-      <section className="flex flex-col justify-center items-center " data-aos="zoom-in">
+      <section className="h-screen flex flex-col justify-center items-center " data-aos="zoom-in">
         <h1 className="text-4xl mt-5 font-bold md:text-5xl">Contact Me</h1>
         <form onSubmit={handleSubmit} className="flex flex-col gap-4 mt-10 px-9 py-5 rounded-lg bg-gradient-to-br from-white/10 to-transparent backdrop-blur-lg border border-white/20 shadow-[0_8px_32px_0_rgba(69,58,58,0.37)] md:h-[450px] md:w-[700px] md:flex md:flex-col md:justify-center md:items-center md:gap-10">
           <div className="name flex gap-5 md:flex md:gap-10 mt-7">

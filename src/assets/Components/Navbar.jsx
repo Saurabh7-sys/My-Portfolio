@@ -1,6 +1,5 @@
 import Button from './Button';
 import { useState } from 'react';
-import { Link , useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -9,19 +8,20 @@ const Navbar = () => {
     setOpen(!open);
   };
 
-  const navigate = useNavigate();
-
-  const handleContactRedirect = () => {
-    navigate('/Contact'); 
+  const handleScrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+    setOpen(false); 
   };
-
 
   return (
     <nav className="flex items-center justify-between bg-gradient-to-br from-white/10 to-transparent backdrop-blur-lg border border-white/20 shadow-[0_8px_32px_0_rgba(69,58,58,0.37)] p-5 h-14 rounded-full m-6 z-50 relative md:flex md:justify-between md:items-center md:p-5 md:h-14 md:rounded-full md:m-6 md:z-50">
       <h1 className="bg-transparent text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-300 to-white text-3xl font-bold">
         Saurabh Shelar
       </h1>
-      <div className="md:hidden flex items-center ">
+      <div className="md:hidden flex items-center">
         <img
           onClick={handleClick}
           className="w-6 h-5 hover:scale-105 duration-200 cursor-pointer"
@@ -32,41 +32,40 @@ const Navbar = () => {
       <div className={`absolute top-full left-0 w-full transition-transform duration-300 ease-in-out bg-slate-95 rounded-3xl ${open ? 'transform translate-y-0 opacity-100' : 'transform translate-y-[-20px] opacity-0 pointer-events-none'}`}>
         <ul className="flex flex-col items-center space-y-2 shadow-lg p-4 rounded-2xl bg-blue-800">
           <li className="my-1">
-            <Link to="/">Home</Link>
+            <a onClick={() => handleScrollToSection('content')} href="#content">Home</a>
           </li>
           <li className="my-1">
-            <Link to="/projects">Projects</Link>
+            <a onClick={() => handleScrollToSection('projects')} href="#projects">Projects</a>
           </li>
           <li className="my-1">
-            <Link to="/about">About</Link>
+            <a onClick={() => handleScrollToSection('about')} href="#about">About</a>
           </li>
           <li className="my-1">
-            <Link to="/skills">Skills</Link>
+            <a onClick={() => handleScrollToSection('skills')} href="#skills">Skills</a>
           </li>
           <li className="my-1">
-            <Link to="/contact">Contact</Link>
+            <a onClick={() => handleScrollToSection('contact')} href="#contact">Contact</a>
           </li>
-          <Button onClick={handleContactRedirect}>Contact Me</Button>
+          <Button onClick={() => handleScrollToSection('contact')}>Contact Me</Button>
         </ul>
       </div>
       <ul className="hidden md:flex md:gap-24 md:justify-end md:items-center">
         <li className="hover:scale-105 duration-200 cursor-pointer">
-          <Link to="/">Home</Link>
+          <a onClick={() => handleScrollToSection('content')} href="#content">Home</a>
         </li>
         <li className="hover:scale-110 duration-200 cursor-pointer">
-          <Link to="/projects">Projects</Link>
+          <a onClick={() => handleScrollToSection('projects')} href="#projects">Projects</a>
         </li>
         <li className="hover:scale-110 duration-200 cursor-pointer">
-          <Link to="/about">About</Link>
+          <a onClick={() => handleScrollToSection('about')} href="#about">About</a>
         </li>
         <li className="hover:scale-110 duration-200 cursor-pointer">
-          <Link to="/skills">Skills</Link>
+          <a onClick={() => handleScrollToSection('skills')} href="#skills">Skills</a>
         </li>
         <li className="hover:scale-110 duration-200 cursor-pointer">
-          <Link to="/contact">Contact</Link>
+          <a onClick={() => handleScrollToSection('contact')} href="#contact">Contact</a>
         </li>
-        <Button onClick={handleContactRedirect}>Contact Me</Button>
-
+        <Button onClick={() => handleScrollToSection('contact')}>Contact Me</Button>
       </ul>
     </nav>
   );
