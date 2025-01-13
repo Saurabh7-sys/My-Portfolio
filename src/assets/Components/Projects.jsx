@@ -8,7 +8,7 @@ function Projects() {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center space-y-6 mt-96">
+    <div className="min-h-screen flex flex-col items-center justify-center space-y-6 md:mt-96">
       <h1 className="text-4xl md:text-5xl font-bold" data-aos="zoom-in">Projects</h1>
       
       <div className="max-w-xs md:max-w-md block mt-8" data-aos="zoom-in">
